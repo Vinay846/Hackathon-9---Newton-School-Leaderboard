@@ -16,7 +16,7 @@ const sanitize = (value, defaultValue)=>{
     if(value === null || value === undefined || isNaN(Number(value))){
         return defaultValue;
     }
-    return value;
+    return Number(value);
 }
 
 // your code goes here
